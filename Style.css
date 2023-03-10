@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1400px;
+}
+.row{
+    align-items: center;
+}
+.logo{
+display: flex;
+align-items: center;
+position: relative;
+}
+.logo > div:nth-child(2){
+    position: absolute;
+    top: 45px;
+    left: 143px;
+}
+.logo img{
+    width: 180px;
+    height: auto;
+}
+.logo h4{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 28px;
+}
+.logo p{
+    color: #454545;
+    line-height: 17px;
+    margin-top: 10px;
+}
+.nav-menu ul{
+display: flex;
+align-items: center;
+}
+.nav-menu ul li{
+padding-left: 18px;
+padding-right: 18px;
+display: flex;
+align-items: center;
+}
+.nav-menu ul li span{
+    font-size: 30px;
+    height: 65px;
+    margin-right: 5px;
+    color:#dc3545
+}
+.nav-menu ul li a{
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+.active-menu-link a{
+    color: #dc3545 !important;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.contact-info>div{
+    /* display: flex; */
+    /* align-items: center; */
+}
+.contact-info>div>div{
+    display: flex;
+}
+.contact-info{
+
+}
+.contact-info h6{
+    font-weight: 600;
+    margin-left: 5px
+}
+.contact-info span{
+    display: block !important;
+    color: #3c3c3c;
+    font-size: 14px;
+}
+.contact-info i{
+    color: #dc3545;
+    font-size: 14px;
+}
+
+.hero-section, .rehabilitation-phase{
+    /* height: 80vh; */
+    background: #F9F9FC;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.hero-section img{
+    width: 100%;
+    height: 600px;
+    border-radius: 150px 0px 0px 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.carousel-item img{
+    width: 100%;
+    height: 600px;
+}
+.hero-left-section{
+    /* margin-left: 10%; */
+}
+.hero-left-section h2, .about-us-section h2, .rehabilitation-phase h2, .our-doctors-section h2, .footer-section h2{
+    font-weight: 600;
+    color: rgb(40, 47, 57);
+    line-height: 50px;
+}
+.hero-left-section p{
+    width: 90%;
+    margin-top: 12px;
+    line-height: 28px;
+    color: rgb(97, 114, 138);
+}
+.call-now{
+    background-color: #f4f4f4;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-now i{
+    background-color: #6EA06D;
+    color: #ffffff;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 80px;
+    display: inline-block;
+    height: 80px;
+    text-align: center;
+    padding-top: 23px;
+    margin-right: 20px;
+}
+.call-now h6{
+    color: #6EA06D;
+    margin: 0;
+}
+.call-now h4{
+    margin: 0;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+.call-now p{
+    line-height: 22px;
+}
+.call-now >div:nth-child(2){
+    margin-top: 10px;
+}
+.about-us-section{
+    background-image: url(./assets/abou-us-bg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+    background-attachment:fixed;
+}
+.about-us-section::before{
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,0.75);
+    top:0;left: 0;right: 0;bottom: 0;
+    z-index: -10;
+}
+.about-us-section >div{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+.about-us-section h2{
+    color:#fff;
+}
+.about-us-section span{
+    position: relative;
+    /* margin-bottom: 18px; */
+}
+.about-us-section span::before, .rehabilitation-phase h2::before, .our-doctors-section h2::before, .footer-section h2::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #dc3545;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-us-section span{
+    color: rgb(185, 193, 206);
+}
+.about-us-section p{
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 70px;
+    font-style: italic;
+    color:#fff;
+}
+.carousel-control-next-icon{
+    background-image: url(./assets/next-arrow.svg) !important;
+    width: 100px;
+    height: 100px;
+    margin-right: -20px !important;
+}
+.carousel-control-prev-icon{
+    background-image: url(./assets/prev-arrow.svg) !important;
+    width: 100px;
+    height: 100px;
+    margin-left: -20px !important;
+}
+.rehabilitation-phase > div{
+    width: 80%;
+    margin: auto;
+}
+/* .phases-container{
+    display: flex;
+    justify-content: space-between;
+} */
+.single-phase {
+    padding: 10px;
+    margin: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #d4d4d4;
+
+}
+.single-phase img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.single-phase h4{
+    font-weight: 600;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.single-phase p{
+    line-height: 30px;
+    color: rgb(77, 77, 77);
+}
+.phase-content{
+    background: #E9ECEF;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    height: 370px;
+}
+.rehabilitation-phase h2, .our-doctors-section h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.rehabilitation-phase h2::before, .our-doctors-section h2::before{
+    top: 55px;
+}
+.our-doctors-section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+.single-doctor{}
+.single-doctor img{
+    width: 100%;
+    height: 340px;
+    border-radius: 15px 15px 0px 0px;
+    border: 2px solid #248cc8;
+}
+.single-doctor h5{
+    color: #014e7a;
+    margin: 0;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.single-doctor span{
+    color: #248cc8;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.single-doctor > div{
+    background: #ececec;
+    margin-top: -18px;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15px;
+    width: 100%;
+    height: 150px;
+}
+
+.footer-section{
+
+}
+.footer-section>div:nth-child(1){
+    background-color: #333;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.footer-section >div:nth-child(1)>div{
+    width: 75%;
+    margin: auto;
+}
+.contact-info{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    color:#333
+}
+.footer-section span{
+    color: #c1c1c1;
+}
+.footer-section h6{
+    color: #eaeaea;
+    margin-bottom: 10px;
+}
+.footer-section h2::before{
+    top: 55px;
+}
+.footer-section h2{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+.footer-p{
+    background: #262626;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+.footer-p p{
+    margin-top: 12px;
+}
+
+/* Responsive CSS*/
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+    .about-us-section >div{
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .about-us-section p{
+        font-size: 16px;
+    }
+    .about-us-section span::before{
+        top: 50px;
+    }
+    .rehabilitation-phase > div{
+        width: 90%;
+        margin: auto;
+    }
+    .single-phase {
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+    .single-phase p{
+        font-size: 12px;
+    }
+    .phase-content{
+        height: 400px;
+    }
+    .our-doctors-section h2{
+        line-height: 38px;
+    }
+    .our-doctors-section h2::before {
+        top: 85px;
+    }
+    .single-doctor{
+        margin-bottom: 40px;
+    }
+    
+}
+
