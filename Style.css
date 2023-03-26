@@ -15,32 +15,56 @@ li{
 .container{
     max-width: 1400px;
 }
-.row{
+.row-align{
     align-items: center;
+}
+.header-section{
+    background-color: #101010d1;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding-top: 18px;
+    padding-bottom: 3px;
+    position: relative;
+}
+.toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 .logo{
 display: flex;
-align-items: center;
-position: relative;
-}
-.logo > div:nth-child(2){
-    position: absolute;
-    top: 45px;
-    left: 143px;
 }
 .logo img{
-    width: 180px;
+    width: 65px;
     height: auto;
+    margin-right: 10px;
 }
 .logo h4{
     font-style: italic;
-    font-weight: 600;
-    font-size: 28px;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 4px;
+    color: #fff;
 }
 .logo p{
-    color: #454545;
     line-height: 17px;
-    margin-top: 10px;
+    font-style: italic;
+}
+.fixed-top{
+    position: fixed !important;
 }
 .nav-menu ul{
 display: flex;
@@ -54,26 +78,33 @@ align-items: center;
 }
 .nav-menu ul li span{
     font-size: 30px;
-    height: 65px;
     margin-right: 5px;
-    color:#dc3545
+    color: #dc3545;
+    margin-top: -20px;
 }
 .nav-menu ul li a{
     font-size: 14px;
-    color: #333;
     font-weight: 600;
+    color:#fff
 }
+.active-menu-link{
+    background: #222;
+    border-radius: 8px;
+    padding: 10px 25px !important;
+}
+
 .active-menu-link a{
-    color: #dc3545 !important;
+    color: #fff!important;
 }
 .contact-info{
     display: flex;
     justify-content: space-evenly;
 
 }
-.contact-info>div{
-    /* display: flex; */
-    /* align-items: center; */
+.footer-contact-info>div{
+    margin-bottom: 35px;
+    border-bottom: 1px solid #626262;
+    padding-bottom: 6px;
 }
 .contact-info>div>div{
     display: flex;
@@ -83,23 +114,44 @@ align-items: center;
 }
 .contact-info h6{
     font-weight: 600;
-    margin-left: 5px
+    margin-left: 5px;
+    font-size: 14px;
 }
-.contact-info span{
+.footer-contact-info span{
     display: block !important;
     color: #3c3c3c;
     font-size: 14px;
 }
+.footer-contact-info i{
+    color: #E66569;
+    font-size: 18px;
+    margin-top: -5px;
+    margin-right: 5px;
+}
 .contact-info i{
-    color: #dc3545;
-    font-size: 14px;
+    color: #FF8B8E;
+    font-size: 16px;
+    margin-top: -5px;
+    margin-right: 2px;
+}
+.nav-contact-info span{
+    color: #d5d5d5;
+    font-weight: 600;
+    font-size: 13px;
 }
 
-.hero-section, .rehabilitation-phase{
+/* HERO SECTION */
+.hero-section, .accommodation-section{
     /* height: 80vh; */
     background: #F9F9FC;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.hero-section{
+    position: relative;
+}
+.rehabilitation-phase .row{
+    align-items: baseline;
 }
 .hero-section img{
     width: 100%;
@@ -113,12 +165,29 @@ align-items: center;
     height: 600px;
 }
 .hero-left-section{
-    /* margin-left: 10%; */
+    position: relative;
+    padding-left: 80px;
 }
+.call-bg{
+    position: absolute;
+    bottom: -116px;
+    left: 0;
+    z-index: 30;
+}
+.call-bg img{
+    width: 100%;
+    height: auto;
+}
+
 .hero-left-section h2, .about-us-section h2, .rehabilitation-phase h2, .our-doctors-section h2, .footer-section h2{
     font-weight: 600;
     color: rgb(40, 47, 57);
-    line-height: 50px;
+    line-height: 45px;
+    font-size: 28px
+}
+.hero-slider{
+    position: relative;
+    z-index: 10;
 }
 .hero-left-section p{
     width: 90%;
@@ -131,11 +200,13 @@ align-items: center;
     width: 90%;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 20;
 }
 
 .call-now i{
@@ -153,12 +224,14 @@ align-items: center;
 .call-now h6{
     color: #6EA06D;
     margin: 0;
+    margin-bottom: 8px;
 }
 .call-now h4{
     margin: 0;
-  font-weight: 600;
-  margin-top: 5px;
-  margin-bottom: -5px;
+    margin-top: 5px;
+    font-size: 20px;
+    text-decoration: underline;
+    color:#064EB7;
 }
 .call-now p{
     line-height: 22px;
@@ -166,68 +239,129 @@ align-items: center;
 .call-now >div:nth-child(2){
     margin-top: 10px;
 }
-.about-us-section{
-    background-image: url(./assets/abou-us-bg.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 10;
-    background-attachment:fixed;
-}
-.about-us-section::before{
-    content: '';
+.circle-bg{
     position: absolute;
-    background: rgba(0,0,0,0.75);
-    top:0;left: 0;right: 0;bottom: 0;
-    z-index: -10;
+    left: -32%;
+    bottom: -119px;
+    z-index: -1;
 }
-.about-us-section >div{
-    text-align: center;
-    width: 80%;
-    margin: auto;
-    padding-top: 80px;
+.circle-bg img{
+    width: 100%;
+    height: auto;
+}
+.about-us-section{
+    color: #000;
+    padding-top: 100px;
     padding-bottom: 130px;
 }
-.about-us-section h2{
-    color:#fff;
+.director-img{
+    width: 95%;
+}
+.about-us-section h4{
+    font-weight: 600;
+    font-size: 22px;
+    color:#9B393C
 }
 .about-us-section span{
     position: relative;
     /* margin-bottom: 18px; */
 }
-.about-us-section span::before, .rehabilitation-phase h2::before, .our-doctors-section h2::before, .footer-section h2::before{
+.about-us-section p{
+    font-size: 14px;
+    line-height: 35px;
+    margin-top: 25px;
+    color: #63677E;
+    font-weight: 600;
+}
+.director-container{
+    position: relative;
+    z-index: 10;
+}
+.director-container::before{
     content: '';
     position: absolute;
-    width: 50px;
-    height: 2px;
-    background: #dc3545;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: -2%;
+    right: 20%;
+    top: -8%;
+    bottom: 20%;
+    border: 8px solid #9B393C;
+    z-index: -1;
 }
-.about-us-section span{
-    color: rgb(185, 193, 206);
+.border-3{
+    position: absolute;
+    bottom: -175px;
+    left: 36px;
 }
-.about-us-section p{
-    font-size: 18px;
-    line-height: 35px;
-    margin-top: 70px;
-    font-style: italic;
+.border-1{
+    position: absolute;
+    bottom: -80px;
+    left: 12px;
+    height: 80px;
+    width: 91.7% !important;
+    
+}
+.border-2{
+    position: absolute;
+    bottom: -164px;
+    left: 45px;
+}
+.director-info{
+    position: absolute;
+    display: flex;
+    bottom: -60px;
+    color: #fff;
+    z-index: 20;
+    left: 60px;
+}
+.director-info h4{
     color:#fff;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.director-info h5{
+    font-weight: 600;
+    font-size: 18px;
+    color: #fffefe;
+}
+.about-us-content>div{
+    text-align: right;
+}
+.arrow-design{
+    text-align: center !important;
+}
+.arrow-design img{
+    width: 20% !important;
+    margin-top: 5px !important;
+}
+.about-us-content img{
+    width: 60%;
+    height: 12px;
+    margin-top: -10px;
 }
 .carousel-control-next-icon{
-    background-image: url(./assets/next-arrow.svg) !important;
-    width: 100px;
+    background-image: url(./assets/right-arrow-7343.svg) !important;
+    width: 50px;
     height: 100px;
     margin-right: -20px !important;
 }
 .carousel-control-prev-icon{
-    background-image: url(./assets/prev-arrow.svg) !important;
-    width: 100px;
+    background-image: url(./assets/left-arrow-7344.svg) !important;
+    width: 50px;
     height: 100px;
     margin-left: -20px !important;
 }
-.rehabilitation-phase > div{
+
+.promo-video{
+    width: 100%;
+    margin-top: 94px;
+    /* height: 100vh; */
+}
+
+#myVideo{
+    width:100vw;
+    height: auto;
+}
+.rehabilitation-phase > div, .accommodation-section>div, .contact-section>div{
     width: 80%;
     margin: auto;
 }
@@ -237,117 +371,171 @@ align-items: center;
 } */
 .single-phase {
     padding: 10px;
-    margin: 40px;
     background: #ffffff;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px #d4d4d4;
+    box-shadow: 3px 3px 10px 5px #d9d6d6;
 
 }
 .single-phase img{
     width: 100%;
     border-radius: 10px 10px 0px 0px;
+    height: 300px
 }
 .single-phase h4{
     font-weight: 600;
-    padding-bottom: 15px;
-    padding-top: 10px;
+    font-size: 16px;
+    background: #DB5F5F;
+    color: #fff;
+    padding: 7px;
 }
-.single-phase p{
+.single-phase p, .accommodation-section p{
     line-height: 30px;
     color: rgb(77, 77, 77);
 }
 .phase-content{
     background: #E9ECEF;
-    padding: 20px;
+    padding: 15px;
     border-radius: 0px 0px 10px 10px;
-    height: 370px;
+}
+.border-arrow{
+    text-align: right;
+    margin-bottom: 60px;
+}
+.contact-section .border-arrow{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.accommodation-section .border-arrow{
+    margin-right: 0;
+    margin-bottom: -18px;
+    text-align: left
+}
+.accommodation-section .border-arrow img{
+    margin-right: 0;
+    width: 40% !important;
+    height: 7px !important;
+    margin-top: -40px;
+}
+.border-arrow img{
+    width: 32% !important;
+    margin-right: 28%;
+    margin-top: -25px;
+    height: 12px !important;
+}
+.rehabilitation-phase{
+    background: url(./assets/bg_03.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 100px;
 }
 .rehabilitation-phase h2, .our-doctors-section h2{
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 50px;
     position: relative;
 }
 .rehabilitation-phase h2::before, .our-doctors-section h2::before{
     top: 55px;
 }
+.our-doctors-section .row{
+    width: 85%;
+    margin: auto;
+}
 .our-doctors-section{
-    width: 80%;
+    background-image: url(./assets/bg_pattern_01.png);
     margin: auto;
     text-align: center;
     padding-top: 60px;
-    padding-bottom: 120px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
-.single-doctor{}
+.single-doctor{
+    margin-bottom: 50px;
+}
 .single-doctor img{
-    width: 100%;
-    height: 340px;
-    border-radius: 15px 15px 0px 0px;
-    border: 2px solid #248cc8;
+    width: 80%;
+    height: 280px;
+    border-radius: 50%;
 }
 .single-doctor h5{
-    color: #014e7a;
-    margin: 0;
     font-weight: 600;
-    margin-top: 25px;
-    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: rgb(40, 47, 57);
+    margin: 5px;
 }
 .single-doctor span{
-    color: #248cc8;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
+    color: #85889B;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
 }
 .single-doctor > div{
-    background: #ececec;
-    margin-top: -18px;
-    border-radius: 0px 0px 15px 15px;
-    padding: 15px;
+    margin-top: 20px;
+}
+
+.accommodation-section img{
     width: 100%;
-    height: 150px;
+    height: 250px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+.accommodation-section h5{
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+.accommodation-section p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 500;
 }
 
-.footer-section{
-
-}
-.footer-section>div:nth-child(1){
-    background-color: #333;
-    padding-top: 50px;
+.contact-section{
+    background: #404041;
+    padding-top: 90px;
     padding-bottom: 100px;
 }
-.footer-section >div:nth-child(1)>div{
-    width: 75%;
-    margin: auto;
+.map-frame{
+    padding-right: 60px;
 }
-.contact-info{
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: space-between; */
+.map-frame iframe{
+    width: 100%;
+    height: 450px;
+}
+.footer-contact-info{
+    display: block;
     color:#333
 }
-.footer-section span{
+.contact-container span{
     color: #c1c1c1;
 }
-.footer-section h6{
+.contact-container h6{
     color: #eaeaea;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+    font-size: 18px;
 }
-.footer-section h2::before{
+.contact-container h2::before{
     top: 55px;
 }
-.footer-section h2{
+.contact-container h2{
     color: #fff;
-    text-align: center;
     position: relative;
-    margin-bottom: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
-.footer-p{
+.contact-container .border-arrow img {
+    width: 42% !important;
+    margin-right: 56%;
+    margin-top: -50px;
+    height: 12px !important;
+}
+.footer-section{
     background: #262626;
     padding: 10px;
     color: #fff;
     text-align: center;
 }
-.footer-p p{
+.footer-section p{
     margin-top: 12px;
 }
 
@@ -356,14 +544,92 @@ align-items: center;
 
 }
 @media screen and (max-width: 768px) {
-    .about-us-section >div{
+    h2{
+        font-size: 24px !important;
+    }
+    .fixed-top{
+        position: static !important;
+    }
+    .header-section {
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    .logo img {
+        width: 50px;
+    }
+    .logo h4 {
+        font-size: 22px;
+    }
+    .logo p {
+        font-size: 12px;
+    }
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        width: 100%;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-contact-info{
+        display: none;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .active-menu-link {
+        padding: 0px 10px !important;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        background: #555;
+    }
+    .contact-info i {
+        font-size: 14px;
+    }
+    .nav-contact-info{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .nav-contact-info h6{
+        font-size: 12px;
+        margin: 0px;
+        margin-left: 5px;
+    }
+    .nav-contact-info span{
+        font-size: 10px;
+    }
+    .promo-video {
+        margin-top: 0px;
+    }
+    .rehabilitation-phase > div, .accommodation-section>div, .contact-section>div, .about-us-section >div{
         width: 90%;
-        margin: auto;
+        overflow: hidden;
+    }
+    .hero-left-section h2, .about-us-section h2, .rehabilitation-phase h2, .our-doctors-section h2, .footer-section h2 {
+        line-height: 28px;
+    }
+    .about-us-section >div{
         padding-top: 50px;
         padding-bottom: 100px;
     }
     .about-us-section p{
-        font-size: 16px;
+        font-size: 12px;
     }
     .about-us-section span::before{
         top: 50px;
@@ -375,15 +641,14 @@ align-items: center;
     .single-phase {
         margin: 0px;
         margin-bottom: 50px;
+        padding:0px
     }
     .single-phase p{
         font-size: 12px;
     }
-    .phase-content{
-        height: 400px;
-    }
-    .our-doctors-section h2{
+    .our-doctors-section h2, .hero-section h2{
         line-height: 38px;
+        text-align: center;
     }
     .our-doctors-section h2::before {
         top: 85px;
@@ -391,6 +656,195 @@ align-items: center;
     .single-doctor{
         margin-bottom: 40px;
     }
-    
+    .footer-contact-info{
+        display: block;
+    }
+    .footer-section >div:nth-child(1)>div{
+        width: 65%;
+    }
+    .footer-contact-info>div{
+        margin-bottom: 30px;
+    }
+    .footer-contact-info>div>div{
+        justify-content: center;
+    }
+    .footer-contact-info>div>span{
+        text-align: center;
+    }
+    .footer-contact-info>div>div>div{
+        text-align: center;
+    }
+    .footer-section>div:nth-child(1){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .hero-slider {
+        margin-bottom: 50px;
+    }
+    .circle-bg {
+        left: -8%;
+        bottom: -65px;
+    }
+    .carousel-control-prev-icon {
+        width: 35px;
+        margin-left: 0px !important;
+    }
+    .carousel-control-next-icon {
+        width: 35px;
+        margin-right: 0px !important;
+    }
+
+    .hero-section{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .hero-section>div{
+        width: 90%;
+        margin: auto;
+    }
+    .hero-left-section{
+        width: 100%;
+        margin: auto;
+        padding-left: 0px;
+        margin-bottom: 80px;
+    }
+    .hero-left-section p{
+        width: 100%;
+        text-align: center;
+    }
+    .call-now{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .call-now h4{
+        font-size: 16px;
+    }
+    .call-bg{
+        bottom: -70px;
+        left: -25px;
+    }
+    .call-bg img{
+        width: 50%;
+    }
+    .call-now p {
+        line-height: 16px;
+        font-size: 12px;
+    }
+
+    .carousel-item img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .hero-section img{
+        border-radius: 0px;
+    }
+    .director-img{
+        width: 100%;
+    }
+    .about-us-section > div {
+        padding-bottom: 0px;
+        overflow: visible;
+    }
+    .about-us-section {
+        color: #000;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    .about-us-content{
+        margin-top: 170px;
+    }
+    .border-1 {
+        bottom: -60px;
+        height: 60px;
+        width: 93.7% !important;
+    }
+    .border-2 {
+        bottom: -126px;
+        height: 155px;
+    }
+    .border-3 {
+        bottom: -133px;
+        left: 38px;
+        width: 105px;
+    }
+    .director-info {
+        bottom: -47px;
+        left: 30px;
+    }
+    .director-info h4 {
+        margin-right: 5px;
+        font-size: 14px
+    }
+    .director-info h5 {
+        font-size: 12px;
+    }
+    .about-us-section h4 {
+        font-size: 14px;
+    }
+    .about-us-content > div {
+        text-align: left;
+    }
+    .about-us-section p {
+        margin-top: 8px;
+    }
+    .about-us-content img {
+        width: 70%;
+        margin-top: -20px;
+    }
+    .rehabilitation-phase{
+      background-repeat: repeat;
+      background-position:top;
+      padding-bottom: 40px;
+    }
+    .accommodation-section {
+        padding-bottom: 50px
+    }
+    .accommodation-section .border-arrow img {
+        width: 70% !important;
+        height: 10px !important;
+    }
+    .border-arrow {
+        margin-bottom: 40px;
+    }
+    .border-arrow img {
+        width: 50% !important;
+        margin-right: 23%;
+        
+    }
+    .our-doctors-section {
+        background-repeat: repeat;
+    }
+    .single-doctor img {
+        width: 100%;
+        height: 320px;
+    }
+    .single-doctor h5 {
+        font-size: 18px;
+        margin: 0px;
+    }
+    .map-frame{
+        padding-right: 0px;
+    }
+    .contact-section {
+        background: #404041;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .contact-container{
+        margin-top: 40px;
+    }
+    .contact-container h2{
+        text-align: center;
+    }
+    .contact-container span{
+        font-size: 12px;
+    }
+    .contact-container h6{
+        font-size: 16px;
+    }
+    .contact-container .border-arrow img {
+        margin-right: 0%;
+    }
 }
 
