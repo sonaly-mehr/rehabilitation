@@ -1,865 +1,845 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-size: 14px;
-    overflow-x: hidden;
+body {
+  font-size: 14px;
+  overflow-x: hidden;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-.container{
-    max-width: 1400px;
+.container {
+  max-width: 1400px;
 }
-.row-align{
-    align-items: center;
+.row-align {
+  align-items: center;
 }
-.header-section{
-    background-color: #101010d1;
-    backdrop-filter: blur(5px);
-    color: #fff;
-    padding-top: 18px;
-    padding-bottom: 3px;
-    position: relative;
+.header-section {
+  background-color: #101010d1;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  padding-top: 18px;
+  padding-bottom: 3px;
+  position: relative;
 }
 .toggle-button {
-    position: absolute;
-    top: 1.75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
-
 .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
 }
-.logo{
-display: flex;
+.logo, .contact-info > div > div {
+  display: flex;
 }
-.logo img{
-    width: 65px;
-    height: auto;
-    margin-right: 10px;
+.logo img {
+  width: 65px;
+  height: auto;
+  margin-right: 10px;
 }
-.logo h4{
-    font-style: italic;
-    font-weight: 900;
-    font-size: 30px;
-    margin: 0;
-    margin-bottom: 4px;
-    color: #fff;
+.logo h4 {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 4px;
+  color: #fff;
 }
-.logo p{
-    line-height: 17px;
-    font-style: italic;
+.logo p {
+  line-height: 17px;
+  font-style: italic;
 }
-.fixed-top{
-    position: fixed !important;
+.fixed-top {
+  position: fixed !important;
 }
-.nav-menu ul{
-display: flex;
-align-items: center;
+.nav-menu ul {
+  display: flex;
+  align-items: center;
 }
-.nav-menu ul li{
-padding-left: 18px;
-padding-right: 18px;
-display: flex;
-align-items: center;
+.nav-menu ul li {
+  padding-left: 18px;
+  padding-right: 18px;
+  display: flex;
+  align-items: center;
 }
-.nav-menu ul li span{
-    font-size: 30px;
-    margin-right: 5px;
-    color: #dc3545;
-    margin-top: -20px;
+.nav-menu ul li span {
+  font-size: 30px;
+  margin-right: 5px;
+  color: #dc3545;
+  margin-top: -20px;
 }
-.nav-menu ul li a{
-    font-size: 14px;
-    font-weight: 600;
-    color:#fff
+.nav-menu ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
 }
-.active-menu-link{
-    background: #222;
-    border-radius: 8px;
-    padding: 10px 25px !important;
+.active-menu-link {
+  background: #222;
+  border-radius: 8px;
+  padding: 10px 25px !important;
 }
 
-.active-menu-link a{
-    color: #fff!important;
+.active-menu-link a {
+  color: #fff !important;
 }
-.contact-info{
-    display: flex;
-    justify-content: space-evenly;
-
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
 }
-.footer-contact-info>div{
-    margin-bottom: 35px;
-    border-bottom: 1px solid #626262;
-    padding-bottom: 6px;
+.footer-contact-info > div {
+  margin-bottom: 35px;
+  border-bottom: 1px solid #626262;
+  padding-bottom: 6px;
 }
-.contact-info>div>div{
-    display: flex;
+.contact-info h6 {
+  font-weight: 600;
+  margin-left: 5px;
+  font-size: 14px;
 }
-.contact-info{
-
+.footer-contact-info span {
+  display: block !important;
+  color: #3c3c3c;
+  font-size: 14px;
 }
-.contact-info h6{
-    font-weight: 600;
-    margin-left: 5px;
-    font-size: 14px;
+.footer-contact-info i {
+  color: #e66569;
+  font-size: 18px;
+  margin-top: -5px;
+  margin-right: 5px;
 }
-.footer-contact-info span{
-    display: block !important;
-    color: #3c3c3c;
-    font-size: 14px;
+.contact-info i {
+  color: #ff8b8e;
+  font-size: 16px;
+  margin-top: -5px;
+  margin-right: 2px;
 }
-.footer-contact-info i{
-    color: #E66569;
-    font-size: 18px;
-    margin-top: -5px;
-    margin-right: 5px;
-}
-.contact-info i{
-    color: #FF8B8E;
-    font-size: 16px;
-    margin-top: -5px;
-    margin-right: 2px;
-}
-.nav-contact-info span{
-    color: #d5d5d5;
-    font-weight: 600;
-    font-size: 13px;
+.nav-contact-info span {
+  color: #d5d5d5;
+  font-weight: 600;
+  font-size: 13px;
 }
 
 /* HERO SECTION */
-.hero-section, .accommodation-section{
-    /* height: 80vh; */
-    background: #F9F9FC;
-    padding-top: 50px;
-    padding-bottom: 80px;
+.hero-section,
+.accommodation-section {
+  /* height: 80vh; */
+  background: #f9f9fc;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
-.hero-section{
-    position: relative;
+.hero-section {
+  position: relative;
 }
-.rehabilitation-phase .row{
-    align-items: baseline;
+.rehabilitation-phase .row {
+  align-items: baseline;
 }
-.hero-section img{
-    width: 100%;
-    height: 600px;
-    border-radius: 150px 0px 0px 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.hero-section img {
+  width: 100%;
+  height: 600px;
+  border-radius: 150px 0px 0px 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.carousel-item img{
-    width: 100%;
-    height: 600px;
+.carousel-item img {
+  width: 100%;
+  height: 600px;
 }
-.hero-left-section{
-    position: relative;
-    padding-left: 80px;
+.hero-left-section {
+  position: relative;
+  padding-left: 80px;
 }
-.call-bg{
-    position: absolute;
-    bottom: -116px;
-    left: 0;
-    z-index: 30;
+.call-bg {
+  position: absolute;
+  bottom: -116px;
+  left: 0;
+  z-index: 30;
 }
-.call-bg img{
-    width: 100%;
-    height: auto;
-}
-
-.hero-left-section h2, .about-us-section h2, .rehabilitation-phase h2, .our-doctors-section h2, .footer-section h2{
-    font-weight: 600;
-    color: rgb(40, 47, 57);
-    line-height: 45px;
-    font-size: 28px
-}
-.hero-slider{
-    position: relative;
-    z-index: 10;
-}
-.hero-left-section p{
-    width: 90%;
-    margin-top: 12px;
-    line-height: 28px;
-    color: rgb(97, 114, 138);
-}
-.call-now{
-    background-color: #f4f4f4;
-    width: 90%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 40px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 20;
+.call-bg img {
+  width: 100%;
+  height: auto;
 }
 
-.call-now i{
-    background-color: #6EA06D;
-    color: #ffffff;
-    font-size: 24px;
-    border-radius: 50%;
-    width: 80px;
-    display: inline-block;
-    height: 80px;
-    text-align: center;
-    padding-top: 23px;
-    margin-right: 20px;
+.hero-left-section h2,
+.about-us-section h2,
+.rehabilitation-phase h2,
+.our-doctors-section h2,
+.footer-section h2 {
+  font-weight: 600;
+  color: rgb(40, 47, 57);
+  line-height: 45px;
+  font-size: 28px;
 }
-.call-now h6{
-    color: #6EA06D;
-    margin: 0;
-    margin-bottom: 8px;
+.hero-slider {
+  position: relative;
+  z-index: 10;
 }
-.call-now h4{
-    margin: 0;
-    margin-top: 5px;
-    font-size: 20px;
-    text-decoration: underline;
-    color:#064EB7;
+.hero-left-section p {
+  width: 90%;
+  margin-top: 12px;
+  line-height: 28px;
+  color: rgb(97, 114, 138);
 }
-.call-now p{
-    line-height: 22px;
-}
-.call-now >div:nth-child(2){
-    margin-top: 10px;
-}
-.circle-bg{
-    position: absolute;
-    left: -32%;
-    bottom: -119px;
-    z-index: -1;
-}
-.circle-bg img{
-    width: 100%;
-    height: auto;
-}
-.about-us-section{
-    color: #000;
-    padding-top: 100px;
-    padding-bottom: 130px;
-}
-.director-img{
-    width: 95%;
-}
-.about-us-section h4{
-    font-weight: 600;
-    font-size: 22px;
-    color:#9B393C
-}
-.about-us-section span{
-    position: relative;
-    /* margin-bottom: 18px; */
-}
-.about-us-section p{
-    font-size: 14px;
-    line-height: 35px;
-    margin-top: 25px;
-    color: #63677E;
-    font-weight: 600;
-}
-.director-container{
-    position: relative;
-    z-index: 10;
-}
-.director-container::before{
-    content: '';
-    position: absolute;
-    left: -2%;
-    right: 20%;
-    top: -8%;
-    bottom: 20%;
-    border: 8px solid #9B393C;
-    z-index: -1;
-}
-.border-3{
-    position: absolute;
-    bottom: -175px;
-    left: 36px;
-}
-.border-1{
-    position: absolute;
-    bottom: -80px;
-    left: 12px;
-    height: 80px;
-    width: 91.7% !important;
-    
-}
-.border-2{
-    position: absolute;
-    bottom: -164px;
-    left: 45px;
-}
-.director-info{
-    position: absolute;
-    display: flex;
-    bottom: -60px;
-    color: #fff;
-    z-index: 20;
-    left: 60px;
-}
-.director-info h4{
-    color:#fff;
-    margin-right: 15px;
-    font-size: 20px;
-}
-.director-info h5{
-    font-weight: 600;
-    font-size: 18px;
-    color: #fffefe;
-}
-.about-us-content>div{
-    text-align: right;
-}
-.arrow-design{
-    text-align: center !important;
-}
-.arrow-design img{
-    width: 20% !important;
-    margin-top: 5px !important;
-}
-.about-us-content img{
-    width: 60%;
-    height: 12px;
-    margin-top: -10px;
-}
-.carousel-control-next-icon{
-    background-image: url(./assets/right-arrow-7343.svg) !important;
-    width: 50px;
-    height: 100px;
-    margin-right: -20px !important;
-}
-.carousel-control-prev-icon{
-    background-image: url(./assets/left-arrow-7344.svg) !important;
-    width: 50px;
-    height: 100px;
-    margin-left: -20px !important;
+.call-now {
+  background-color: #f4f4f4;
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 20;
 }
 
-.promo-video{
-    width: 100%;
-    margin-top: 94px;
-    /* height: 100vh; */
+.call-now i {
+  background-color: #6ea06d;
+  color: #ffffff;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 80px;
+  display: inline-block;
+  height: 80px;
+  text-align: center;
+  padding-top: 23px;
+  margin-right: 20px;
+}
+.call-now h6 {
+  color: #6ea06d;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.call-now h4 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 20px;
+  text-decoration: underline;
+  color: #064eb7;
+}
+.call-now p {
+  line-height: 22px;
+}
+.call-now > div:nth-child(2) {
+  margin-top: 10px;
+}
+.circle-bg {
+  position: absolute;
+  left: -32%;
+  bottom: -119px;
+  z-index: -1;
+}
+.circle-bg img {
+  width: 100%;
+  height: auto;
+}
+.about-us-section {
+  color: #000;
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+.director-img {
+  width: 95%;
+}
+.about-us-section h4 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #9b393c;
+}
+.about-us-section span {
+  position: relative;
+}
+.about-us-section p {
+  font-size: 14px;
+  line-height: 35px;
+  margin-top: 25px;
+  color: #63677e;
+  font-weight: 600;
+}
+.director-container {
+  position: relative;
+  z-index: 10;
+}
+.director-container::before {
+  content: "";
+  position: absolute;
+  left: -2%;
+  right: 20%;
+  top: -8%;
+  bottom: 20%;
+  border: 8px solid #9b393c;
+  z-index: -1;
+}
+.border-3 {
+  position: absolute;
+  bottom: -175px;
+  left: 36px;
+}
+.border-1 {
+  position: absolute;
+  bottom: -80px;
+  left: 12px;
+  height: 80px;
+  width: 91.7% !important;
+}
+.border-2 {
+  position: absolute;
+  bottom: -164px;
+  left: 45px;
+}
+.director-info {
+  position: absolute;
+  display: flex;
+  bottom: -60px;
+  color: #fff;
+  z-index: 20;
+  left: 60px;
+}
+.director-info h4 {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 20px;
+}
+.director-info h5 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fffefe;
+}
+.about-us-content > div {
+  text-align: right;
+}
+.arrow-design {
+  text-align: center !important;
+}
+.arrow-design img {
+  width: 20% !important;
+  margin-top: 5px !important;
+}
+.about-us-content img {
+  width: 60%;
+  height: 12px;
+  margin-top: -10px;
+}
+.carousel-control-next-icon {
+  background-image: url(./assets/right-arrow-7343.svg) !important;
+  width: 50px;
+  height: 100px;
+  margin-right: -20px !important;
+}
+.carousel-control-prev-icon {
+  background-image: url(./assets/left-arrow-7344.svg) !important;
+  width: 50px;
+  height: 100px;
+  margin-left: -20px !important;
 }
 
-#myVideo{
-    width:100vw;
-    height: auto;
+.promo-video {
+  width: 100%;
+  margin-top: 94px;
 }
-.rehabilitation-phase > div, .accommodation-section>div, .contact-section>div{
-    width: 80%;
-    margin: auto;
+
+#myVideo {
+  width: 100vw;
+  height: auto;
 }
-/* .phases-container{
-    display: flex;
-    justify-content: space-between;
-} */
+.rehabilitation-phase > div,
+.accommodation-section > div,
+.contact-section > div {
+  width: 80%;
+  margin: auto;
+}
 .single-phase {
-    padding: 10px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 3px 3px 10px 5px #d9d6d6;
-
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px 5px #d9d6d6;
 }
-.single-phase img{
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    height: 300px
+.single-phase img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  height: 300px;
 }
-.single-phase h4{
-    font-weight: 600;
-    font-size: 16px;
-    background: #DB5F5F;
-    color: #fff;
-    padding: 7px;
+.single-phase h4 {
+  font-weight: 600;
+  font-size: 16px;
+  background: #db5f5f;
+  color: #fff;
+  padding: 7px;
 }
-.single-phase p, .accommodation-section p{
-    line-height: 30px;
-    color: rgb(77, 77, 77);
+.single-phase p,
+.accommodation-section p {
+  line-height: 30px;
+  color: rgb(77, 77, 77);
 }
-.phase-content{
-    background: #E9ECEF;
-    padding: 15px;
-    border-radius: 0px 0px 10px 10px;
+.phase-content {
+  background: #e9ecef;
+  padding: 15px;
+  border-radius: 0px 0px 10px 10px;
 }
-.border-arrow{
-    text-align: right;
-    margin-bottom: 60px;
+.border-arrow {
+  text-align: right;
+  margin-bottom: 60px;
 }
-.contact-section .border-arrow{
-    text-align: center;
-    margin-bottom: 15px;
+.contact-section .border-arrow {
+  text-align: center;
+  margin-bottom: 15px;
 }
-.accommodation-section .border-arrow{
-    margin-right: 0;
-    margin-bottom: -18px;
-    text-align: left
+.accommodation-section .border-arrow {
+  margin-right: 0;
+  margin-bottom: -18px;
+  text-align: left;
 }
-.accommodation-section .border-arrow img{
-    margin-right: 0;
-    width: 40% !important;
-    height: 7px !important;
-    margin-top: -40px;
+.accommodation-section .border-arrow img {
+  margin-right: 0;
+  width: 40% !important;
+  height: 7px !important;
+  margin-top: -40px;
 }
-.border-arrow img{
-    width: 32% !important;
-    margin-right: 28%;
-    margin-top: -25px;
-    height: 12px !important;
+.border-arrow img {
+  width: 32% !important;
+  margin-right: 28%;
+  margin-top: -25px;
+  height: 12px !important;
 }
-.rehabilitation-phase{
-    background: url(./assets/bg_03.png);
+.rehabilitation-phase {
+  background: url(./assets/bg_03.png);
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 100px;
 }
-.rehabilitation-phase h2, .our-doctors-section h2{
-    text-align: center;
-    margin-top: 30px;
-    position: relative;
+.rehabilitation-phase h2,
+.our-doctors-section h2 {
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
 }
-.rehabilitation-phase h2::before, .our-doctors-section h2::before{
-    top: 55px;
+.rehabilitation-phase h2::before,
+.our-doctors-section h2::before {
+  top: 55px;
 }
-.our-doctors-section .row{
-    width: 85%;
-    margin: auto;
+.our-doctors-section .row {
+  width: 85%;
+  margin: auto;
 }
-.our-doctors-section{
-    background-image: url(./assets/bg_pattern_01.png);
-    margin: auto;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 50px;
-    background-repeat: no-repeat;
-    background-position: top center;
+.our-doctors-section {
+  background-image: url(./assets/bg_pattern_01.png);
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
-.single-doctor{
-    margin-bottom: 50px;
+.single-doctor {
+  margin-bottom: 50px;
 }
-.single-doctor img{
-    width: 80%;
-    height: 280px;
-    border-radius: 50%;
+.single-doctor img {
+  width: 80%;
+  height: 280px;
+  border-radius: 50%;
 }
-.single-doctor h5{
-    font-weight: 600;
-    text-transform: capitalize;
-    color: rgb(40, 47, 57);
-    margin: 5px;
+.single-doctor h5 {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: rgb(40, 47, 57);
+  margin: 5px;
 }
-.single-doctor span{
-    color: #85889B;
-    font-weight: 600;
-    font-size: 15px;
-    text-transform: capitalize;
+.single-doctor span {
+  color: #85889b;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: capitalize;
 }
-.single-doctor > div{
-    margin-top: 20px;
+.single-doctor > div {
+  margin-top: 20px;
 }
-
-.accommodation-section img{
-    width: 100%;
-    height: 250px;
-    margin-bottom: 25px;
-    border-radius: 6px;
+.accommodation-section img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 25px;
+  border-radius: 6px;
 }
-.accommodation-section h5{
-    font-weight: 600;
-    margin-bottom: 0px;
-    padding-bottom: 30px;
+.accommodation-section h5 {
+  font-weight: 600;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
 }
-.accommodation-section p{
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-weight: 500;
+.accommodation-section p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 500;
 }
-
-.contact-section{
-    background: #404041;
-    padding-top: 90px;
-    padding-bottom: 100px;
+.contact-section {
+  background: #404041;
+  padding-top: 90px;
+  padding-bottom: 100px;
 }
-.map-frame{
-    padding-right: 60px;
+.map-frame {
+  padding-right: 60px;
 }
-.map-frame iframe{
-    width: 100%;
-    height: 450px;
+.map-frame iframe {
+  width: 100%;
+  height: 450px;
 }
-.footer-contact-info{
-    display: block;
-    color:#333
+.footer-contact-info {
+  display: block;
+  color: #333;
 }
-.contact-container span{
-    color: #c1c1c1;
+.contact-container span {
+  color: #c1c1c1;
 }
-.contact-container h6{
-    color: #eaeaea;
-    margin-bottom: 6px;
-    font-size: 18px;
+.contact-container h6 {
+  color: #eaeaea;
+  margin-bottom: 6px;
+  font-size: 18px;
 }
-.contact-container h2::before{
-    top: 55px;
+.contact-container h2::before {
+  top: 55px;
 }
-.contact-container h2{
-    color: #fff;
-    position: relative;
-    font-weight: 600;
-    margin-bottom: 20px;
+.contact-container h2 {
+  color: #fff;
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 .contact-container .border-arrow img {
-    width: 42% !important;
-    margin-right: 56%;
-    margin-top: -50px;
-    height: 12px !important;
+  width: 42% !important;
+  margin-right: 56%;
+  margin-top: -50px;
+  height: 12px !important;
 }
-.footer-section{
-    background: #262626;
-    padding: 10px;
-    color: #fff;
-    text-align: center;
+.footer-section {
+  background: #262626;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
 }
-.footer-section p{
-    margin-top: 12px;
+.footer-section p {
+  margin-top: 12px;
 }
 
 /* Responsive CSS*/
-@media screen and (max-width: 992px) {
-
-}
 @media screen and (max-width: 768px) {
-    h2{
-        font-size: 20px !important;
-    }
-    .fixed-top{
-        position: static !important;
-    }
-    .header-section {
-        padding-top: 15px;
-        padding-bottom: 0px;
-    }
-    .logo img {
-        width: 50px;
-    }
-    .logo h4 {
-        font-size: 22px;
-        margin-bottom: 0
-    }
-    .logo p {
-        font-size: 12px;
-    }
-    .navbar-links {
-        flex-direction: column;
-        align-items: flex-start;
-        display: none;
-        width: 100%;
-    }
+  h2 {
+    font-size: 20px !important;
+  }
+  .fixed-top {
+    position: static !important;
+  }
+  .header-section {
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+  .logo img {
+    width: 50px;
+  }
+  .logo h4 {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  .logo p,
+  .about-us-section p,
+  .single-phase p,
+  .director-info h5,
+  .contact-container span {
+    font-size: 12px;
+  }
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    width: 100%;
+  }
 
-    .toggle-button {
-        display: flex;
-    }
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav-contact-info {
+    display: none;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
 
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-    .nav-contact-info{
-        display: none;
-    }
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  .active-menu-link {
+    padding: 0px 10px !important;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    background: #555;
+  }
+  .contact-info i,
+  .about-us-section h4 {
+    font-size: 14px;
+  }
+  .nav-contact-info {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .nav-contact-info h6 {
+    font-size: 12px;
+    margin: 0px;
+    margin-left: 5px;
+  }
+  .nav-contact-info span {
+    font-size: 10px;
+  }
+  .promo-video {
+    margin-top: 0px;
+  }
+  .rehabilitation-phase > div,
+  .accommodation-section > div,
+  .contact-section > div,
+  .about-us-section > div {
+    width: 90%;
+    overflow: hidden;
+  }
+  .hero-left-section h2,
+  .about-us-section h2,
+  .rehabilitation-phase h2,
+  .our-doctors-section h2,
+  .footer-section h2 {
+    line-height: 28px;
+  }
+  .about-us-section > div {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .about-us-section span::before {
+    top: 50px;
+  }
+  .rehabilitation-phase > div {
+    width: 90%;
+    margin: auto;
+  }
+  .single-phase {
+    margin: 0px;
+    margin-bottom: 50px;
+    padding: 0px;
+  }
+  .our-doctors-section h2,
+  .hero-section h2 {
+    line-height: 34px;
+    text-align: center;
+  }
+  .our-doctors-section h2::before {
+    top: 85px;
+  }
+  .single-doctor {
+    margin-bottom: 40px;
+  }
+  .single-doctor span {
+    margin-top: 6px;
+    display: block;
+  }
+  .footer-contact-info {
+    display: block;
+  }
+  .footer-section > div:nth-child(1) > div {
+    width: 65%;
+  }
+  .footer-contact-info > div {
+    margin-bottom: 30px;
+  }
+  .footer-contact-info > div > div {
+    justify-content: center;
+  }
+  .footer-contact-info > div > span {
+    text-align: center;
+  }
+  .footer-contact-info > div > div > div {
+    text-align: center;
+  }
+  .footer-section > div:nth-child(1) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .hero-slider {
+    margin-bottom: 50px;
+  }
+  .circle-bg {
+    left: -8%;
+    bottom: -65px;
+  }
+  .carousel-control-prev-icon {
+    width: 35px;
+    margin-left: 0px !important;
+  }
+  .carousel-control-next-icon {
+    width: 35px;
+    margin-right: 0px !important;
+  }
 
-    .navbar-links ul li {
-        text-align: center;
-    }
+  .hero-section {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .hero-section > div {
+    width: 90%;
+    margin: auto;
+  }
+  .hero-left-section {
+    width: 100%;
+    margin: auto;
+    padding-left: 0px;
+    margin-bottom: 80px;
+  }
+  .hero-left-section p {
+    width: 100%;
+    text-align: center;
+  }
+  .call-now {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .call-now h4 {
+    font-size: 16px;
+  }
+  .call-bg {
+    bottom: -70px;
+    left: -25px;
+  }
+  .call-bg img {
+    width: 50%;
+  }
+  .call-now p {
+    line-height: 16px;
+    font-size: 12px;
+  }
 
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-    .active-menu-link {
-        padding: 0px 10px !important;
-        margin-bottom: 8px;
-        margin-top: 8px;
-        background: #555;
-    }
-    .contact-info i {
-        font-size: 14px;
-    }
-    .nav-contact-info{
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    .nav-contact-info h6{
-        font-size: 12px;
-        margin: 0px;
-        margin-left: 5px;
-    }
-    .nav-contact-info span{
-        font-size: 10px;
-    }
-    .promo-video {
-        margin-top: 0px;
-    }
-    .rehabilitation-phase > div, .accommodation-section>div, .contact-section>div, .about-us-section >div{
-        width: 90%;
-        overflow: hidden;
-    }
-    .hero-left-section h2, .about-us-section h2, .rehabilitation-phase h2, .our-doctors-section h2, .footer-section h2 {
-        line-height: 28px;
-    }
-    .about-us-section >div{
-        padding-top: 50px;
-        padding-bottom: 100px;
-    }
-    .about-us-section p{
-        font-size: 12px;
-    }
-    .about-us-section span::before{
-        top: 50px;
-    }
-    .rehabilitation-phase > div{
-        width: 90%;
-        margin: auto;
-    }
-    .single-phase {
-        margin: 0px;
-        margin-bottom: 50px;
-        padding:0px
-    }
-    .single-phase p{
-        font-size: 12px;
-    }
-    .our-doctors-section h2, .hero-section h2{
-        line-height: 34px;
-        text-align: center;
-    }
-    .our-doctors-section h2::before {
-        top: 85px;
-    }
-    .single-doctor{
-        margin-bottom: 40px;
-    }
-    .single-doctor span {
-        margin-top: 6px;
-        display: block;
-    }      
-    .footer-contact-info{
-        display: block;
-    }
-    .footer-section >div:nth-child(1)>div{
-        width: 65%;
-    }
-    .footer-contact-info>div{
-        margin-bottom: 30px;
-    }
-    .footer-contact-info>div>div{
-        justify-content: center;
-    }
-    .footer-contact-info>div>span{
-        text-align: center;
-    }
-    .footer-contact-info>div>div>div{
-        text-align: center;
-    }
-    .footer-section>div:nth-child(1){
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .hero-slider {
-        margin-bottom: 50px;
-    }
-    .circle-bg {
-        left: -8%;
-        bottom: -65px;
-    }
-    .carousel-control-prev-icon {
-        width: 35px;
-        margin-left: 0px !important;
-    }
-    .carousel-control-next-icon {
-        width: 35px;
-        margin-right: 0px !important;
-    }
-
-    .hero-section{
-        padding-top: 20px;
-        padding-bottom: 30px;
-    }
-    .hero-section>div{
-        width: 90%;
-        margin: auto;
-    }
-    .hero-left-section{
-        width: 100%;
-        margin: auto;
-        padding-left: 0px;
-        margin-bottom: 80px;
-    }
-    .hero-left-section p{
-        width: 100%;
-        text-align: center;
-    }
-    .call-now{
-        width: 100%;
-        margin-top: 0px;
-    }
-    .call-now h4{
-        font-size: 16px;
-    }
-    .call-bg{
-        bottom: -70px;
-        left: -25px;
-    }
-    .call-bg img{
-        width: 50%;
-    }
-    .call-now p {
-        line-height: 16px;
-        font-size: 12px;
-    }
-
-    .carousel-item img{
-        width: 100%;
-        height: 400px;
-    }
-
-    .hero-section img{
-        border-radius: 0px
-    }
-    .director-img{
-        width: 100%;
-    }
-    .about-us-section > div {
-        padding-bottom: 0px;
-        overflow: visible;
-    }
-    .about-us-section {
-        color: #000;
-        padding-top: 20px;
-        padding-bottom: 0px;
-    }
-    .about-us-content{
-        margin-top: 160px;
-    }
-    .border-1 {
-        bottom: -60px;
-        height: 60px;
-        width: 93.7% !important;
-    }
-    .border-2 {
-        bottom: -117px;
-        height: 135px;
-    }
-    .border-3 {
-        bottom: -123px;
-        left: 39px;
-        width: 90px;
-    }
-    .director-info {
-        bottom: -47px;
-        left: 18px;
-    }
-    .director-info h4 {
-        margin-right: 5px;
-        font-size: 14px
-    }
-    .director-info h5 {
-        font-size: 12px;
-    }
-    .about-us-section h4 {
-        font-size: 14px;
-    }
-    .about-us-content > div {
-        text-align: left;
-    }
-    .about-us-section p {
-        margin-top: 8px;
-        line-height: 28px;
-    }
-    .about-us-content img {
-        width: 70%;
-        margin-top: -20px;
-    }
-    .rehabilitation-phase{
-      background-repeat: repeat;
-      background-position:top;
-      padding-bottom: 0px;
-    }
-    .accommodation-section {
-        padding-bottom: 30px;
-    }
-    .accommodation-section h5{
-        font-size: 18px;
-    }
-    .accommodation-section p {
-        margin-top: 0px;
-    }
-    .accommodation-section .border-arrow img {
-        width: 70% !important;
-        height: 10px !important;
-    }
-    .border-arrow {
-        margin-bottom: 40px;
-    }
-    .border-arrow img {
-        width: 50% !important;
-        margin-right: 23%;
-        
-    }
-    .our-doctors-section {
-        background-repeat: repeat;
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    
-    .single-doctor img {
-        width: 100%;
-        height: 300px;
-    }
-    .single-doctor h5 {
-        font-size: 18px;
-        margin: 0px;
-    }
-    .map-frame{
-        padding-right: 0px;
-    }
-    .contact-section {
-        background: #404041;
-        padding-top: 60px;
-        padding-bottom: 50px;
-    }
-    .contact-container{
-        margin-top: 40px;
-    }
-    .contact-container h2{
-        text-align: center;
-    }
-    .contact-container span{
-        font-size: 12px;
-    }
-    .contact-container h6{
-        font-size: 16px;
-    }
-    .contact-container .border-arrow img {
-        margin-right: 0%;
-    }
+  .carousel-item img {
+    width: 100%;
+    height: 400px;
+  }
+  .hero-section img {
+    border-radius: 0px;
+  }
+  .director-img {
+    width: 100%;
+  }
+  .about-us-section > div {
+    padding-bottom: 0px;
+    overflow: visible;
+  }
+  .about-us-section {
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .about-us-content {
+    margin-top: 160px;
+  }
+  .border-1 {
+    bottom: -60px;
+    height: 60px;
+    width: 93.7% !important;
+  }
+  .border-2 {
+    bottom: -117px;
+    height: 135px;
+  }
+  .border-3 {
+    bottom: -123px;
+    left: 39px;
+    width: 90px;
+  }
+  .director-info {
+    bottom: -47px;
+    left: 18px;
+  }
+  .director-info h4 {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  .about-us-content > div {
+    text-align: left;
+  }
+  .about-us-section p {
+    margin-top: 8px;
+    line-height: 28px;
+  }
+  .about-us-content img {
+    width: 70%;
+    margin-top: -20px;
+  }
+  .rehabilitation-phase {
+    background-repeat: repeat;
+    background-position: top;
+    padding-bottom: 0px;
+  }
+  .accommodation-section {
+    padding-bottom: 30px;
+  }
+  .accommodation-section h5 {
+    font-size: 18px;
+  }
+  .accommodation-section p {
+    margin-top: 0px;
+  }
+  .accommodation-section .border-arrow img {
+    width: 70% !important;
+    height: 10px !important;
+  }
+  .border-arrow {
+    margin-bottom: 40px;
+  }
+  .border-arrow img {
+    width: 50% !important;
+    margin-right: 23%;
+  }
+  .our-doctors-section {
+    background-repeat: repeat;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .single-doctor img {
+    width: 100%;
+    height: 300px;
+  }
+  .single-doctor h5 {
+    font-size: 18px;
+    margin: 0px;
+  }
+  .map-frame {
+    padding-right: 0px;
+  }
+  .contact-section {
+    background: #404041;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .contact-container {
+    margin-top: 40px;
+  }
+  .contact-container h2 {
+    text-align: center;
+  }
+  .contact-container h6 {
+    font-size: 16px;
+  }
+  .contact-container .border-arrow img {
+    margin-right: 0%;
+  }
 }
-
